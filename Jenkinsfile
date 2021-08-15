@@ -1,10 +1,10 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('error') {
       steps {
         withMaven(jdk: 'jdk11', maven: 'maven3') {
-          sh 'nvm compile'
+          sh 'mvn compile'
         }
 
       }
