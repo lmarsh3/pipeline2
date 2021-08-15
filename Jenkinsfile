@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('error') {
+    stage('Compile') {
       steps {
         withMaven(jdk: 'jdk11', maven: 'maven3') {
           sh 'mvn compile'
