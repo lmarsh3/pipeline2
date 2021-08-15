@@ -27,7 +27,6 @@ pipeline {
 
       }
     }
-
   }
   environment {
     AUTHOR = 'Luke'
