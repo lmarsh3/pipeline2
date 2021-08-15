@@ -22,7 +22,7 @@ pipeline {
     stage('Publish Test Result') {
       steps {
         withMaven(jdk: 'jdk11', maven: 'maven3') {
-          junit 'target/**.xml'
+          junit 'target/**/*.xml'
         }
 
       }
